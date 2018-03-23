@@ -7,26 +7,29 @@ import (
 )
 
 var wd = getWebDriver()
-var title = ""
+var pageTitle string
 
 func thereIsAWebPage() error{
 
 	wd.Get("http://google.com")
-
 
 	return nil
 }
 
 func iGetTheTitle() error {
 
-	title = wd.Title().Value()
+    actualTitle, err := wd.Title()
+    if err != nil {
+        panic(err)
+    }
+
+    pageTitle = actualTitle
 	return nil
 }
 
-func theTitleShouldBe(pageTitle string) error {
-	fmt.Printf("**********: %s", title)
-	if title != pageTitle {
-		return fmt.Errorf("expected title to be %d, but is %d", pageTitle, title)
+func theTitleShouldBe(expectedTitle string) error {
+	if pageTitle != expectedTitle {
+		return fmt.Errorf("expected title to be %d, but is %d", expectedTitle, pageTitle)
 	}
 	return nil
 }
