@@ -24,3 +24,7 @@ geckodriver-v0.18.0-linux64.tar.gz: (referenced in webdriver.go)
 firefox:
 
     % apt-get install firefox
+    
+# TODO
+
+Kill the webDriver following test execution
