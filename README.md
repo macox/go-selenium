@@ -1,6 +1,11 @@
 # go-selenium
 
-Prerequisites
+# Uses
+
+[DATA-DOG Godog]: https://github.com/DATA-DOG/godog
+[Tebeka Selenium]: https://github.com/tebeka/selenium
+
+# Prerequisites
 
 wget "http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar"
 
