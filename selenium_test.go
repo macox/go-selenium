@@ -38,4 +38,9 @@ func FeatureContext(s *godog.Suite) {
 	s.Step(`^there is a web page$`, thereIsAWebPage)
 	s.Step(`^I get the title$`, iGetTheTitle)
 	s.Step(`^the title should be "([^"]*)"$`, theTitleShouldBe)
+
+	s.AfterSuite(func(){
+		fmt.Printf("quit the webdriver")
+		wd.Quit()
+	})
 }
