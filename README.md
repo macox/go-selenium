@@ -25,6 +25,3 @@ firefox:
 
     % apt-get install firefox
     
-# TODO
-
-Kill the webDriver following test execution
