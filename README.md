@@ -25,3 +25,12 @@ firefox:
 
     % apt-get install firefox
     
+godog:
+ 
+    %go get github.com/DATA-DOG/godog/cmd/godog
+    
+tebeka/selenium
+    
+    %go get github.com/tebeka/selenium
+
+    
