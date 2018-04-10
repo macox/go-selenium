@@ -26,6 +26,10 @@ firefox:
 
     % apt-get install firefox
     
+xvfb:    
+    
+    % apt-get install xvfb
+    
 godog:
  
     %go get github.com/DATA-DOG/godog/cmd/godog
