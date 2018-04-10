@@ -13,7 +13,7 @@
 
 godog:
  
-    %go get github.com/DATA-DOG/godog/cmd/godog
+    % go get github.com/DATA-DOG/godog/cmd/godog
 
 selenium-server-standalone-3.4.0:
 
@@ -40,7 +40,11 @@ xvfb:
     
     % apt-get install xvfb
     
-### Chrome
+### Chrome:
+
+chromium:
+
+    % apt-get install chromium-browser
 
 chromeDriver:
     
