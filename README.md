@@ -15,17 +15,17 @@ godog:
  
     %go get github.com/DATA-DOG/godog/cmd/godog
 
-selenium-server-standalone-3.4.0: (referenced in webdriver.go)
+selenium-server-standalone-3.4.0:
 
     % wget "http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar" 
     
 tebeka/selenium
     
-    %go get github.com/tebeka/selenium
+    % go get github.com/tebeka/selenium
     
-Firefox    
+**Firefox**
 
-geckodriver-v0.18.0-linux64.tar.gz: (referenced in webdriver.go)
+geckodriver-v0.18.0-linux64.tar.gz:
 
     % wget "https://github.com/mozilla/geckodriver/releases/download/v0.18.0/geckodriver-v0.18.0-linux64.tar.gz"
     % tar -xvzf geckodriver-v0.18.0-linux64.tar.gz geckodriver-v0.18.0-linux64
@@ -40,7 +40,7 @@ xvfb:
     
     % apt-get install xvfb
     
-Chrome
+**Chrome**
 
 chromeDriver:
     
