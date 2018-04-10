@@ -6,7 +6,7 @@ import (
 	"github.com/DATA-DOG/godog"
 )
 
-var wd = getWebDriver()
+var wd = getChromeWebDriver()
 var pageTitle string
 
 func thereIsAWebPage() error{
