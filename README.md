@@ -11,9 +11,19 @@
 
 # Prerequisites
 
+godog:
+ 
+    %go get github.com/DATA-DOG/godog/cmd/godog
+
 selenium-server-standalone-3.4.0: (referenced in webdriver.go)
 
-    % wget "http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar"
+    % wget "http://selenium-release.storage.googleapis.com/3.4/selenium-server-standalone-3.4.0.jar" 
+    
+tebeka/selenium
+    
+    %go get github.com/tebeka/selenium
+    
+Firefox    
 
 geckodriver-v0.18.0-linux64.tar.gz: (referenced in webdriver.go)
 
@@ -30,12 +40,16 @@ xvfb:
     
     % apt-get install xvfb
     
-godog:
- 
-    %go get github.com/DATA-DOG/godog/cmd/godog
+Chrome
+
+chromeDriver:
     
-tebeka/selenium
+    % wget https://chromedriver.storage.googleapis.com/2.37/chromedriver_linux64.zip
+    % unzip chromedriver_*.zip
+    % mv chromedriver /usr/bin/chromedriver
+    % chmod a+x /usr/bin/chromedriver
+    % rm -rf chromedriver_*.zip
     
-    %go get github.com/tebeka/selenium
+
 
     
