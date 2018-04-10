@@ -9,7 +9,7 @@
 [DATA-DOG Godog]: https://github.com/DATA-DOG/godog
 [Tebeka Selenium]: https://github.com/tebeka/selenium
 
-# Prerequisites
+## Prerequisites
 
 godog:
  
@@ -23,7 +23,7 @@ tebeka/selenium
     
     % go get github.com/tebeka/selenium
     
-**Firefox**
+### Firefox
 
 geckodriver-v0.18.0-linux64.tar.gz:
 
@@ -40,7 +40,7 @@ xvfb:
     
     % apt-get install xvfb
     
-**Chrome**
+### Chrome
 
 chromeDriver:
     
